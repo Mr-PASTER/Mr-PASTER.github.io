@@ -76,21 +76,7 @@ body {
 	z-index: 1;
 }
 		</style>
-		<link rel="manifest" href="index.manifest.json">
-<html>
-   <title>JSONP</title>
-   <head></head>
-   <body>
-      <script type="text/javascript">
-         var script = document.createElement('SCRIPT');
-         script.src = "https://api.vk.com/method/users.get?user_ids=210700286&fields=bdate&v=5.199&callback=callbackFunc";
-         document.getElementsByTagName("head")[0].appendChild(script);
-         function callbackFunc(result) {
-         alert(result.response[0].first_name)
-         }
-      </script>
-   </body>
-</html>
+		<script src = "app.js"></script>
 	</head>
 	<body>
 		<canvas id="canvas">
@@ -109,7 +95,7 @@ body {
 
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":1371552,"index.wasm":35376909},"focusCanvas":true,"gdextensionLibs":[],"serviceWorker":"index.service.worker.js"};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"ensureCrossOriginIsolationHeaders":false,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":15894880,"index.wasm":35376909},"focusCanvas":true,"gdextensionLibs":[]};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
